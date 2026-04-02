@@ -1,5 +1,26 @@
 {
-  "extends": "astro/tsconfigs/strict",
-  "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist"]
+  // Base config from: https://github.com/withastro/astro/tree/main/packages/astro/tsconfigs
+  "extends": "astro/tsconfigs/strictest",
+
+  "include": [".astro/types.d.ts", "astro.config.ts", "public/**/*", "src/**/*"],
+
+  "exclude": ["dist", "node_modules"],
+
+  // #Info: This makes it a little easier to import files from anywhere in your project
+  //        => No relative imports
+  "compilerOptions": {
+    // Path aliases for imports
+    "paths": {
+      "@src/*": ["./src/*"],
+      "@components/*": ["./src/components/*"],
+      "@layouts/*": ["./src/layouts/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@pages/*": ["./src/pages/*"]
+    },
+
+    // #Info: This is completely optional
+    //        => Just remove it if it bugs you
+    // Be strict with imported types
+    "verbatimModuleSyntax": true
+  }
 }
