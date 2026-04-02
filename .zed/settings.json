@@ -2,8 +2,8 @@
     "formatter": {
         "external": {
             "command": "prettier",
-            "arguments": ["--stdin-filepath", "{buffer_path}"],
-        },
+            "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
     },
 
     "languages": {
@@ -14,6 +14,6 @@
         "JSONC": { "prettier": { "allowed": false } },
         "JavaScript": { "prettier": { "allowed": false } },
         "Astro": { "prettier": { "allowed": false } },
-        "TypeScript": { "prettier": { "allowed": false } },
-    },
+        "TypeScript": { "prettier": { "allowed": false } }
+    }
 }
