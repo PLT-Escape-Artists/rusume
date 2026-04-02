@@ -1,24 +1,24 @@
-# build output
-dist/
-# generated types
+# editor files
+.zed/*
+.vscode/*
+.idea/*
+.cursor/*
+.helix/*
+
+# Keep settings file for to configure zed formatter
+!.zed/settings.json
+
+# astro outputs
 .astro/
+dist/
 
-# dependencies
+# package manager files
 node_modules/
-
-# logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-
 # environment variables
 .env
 .env.production
-
-# macOS-specific files
-.DS_Store
-
-# jetbrains setting folder
-.idea/
