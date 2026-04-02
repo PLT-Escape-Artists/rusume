@@ -1,0 +1,19 @@
+{
+    "formatter": {
+        "external": {
+            "command": "prettier",
+            "arguments": ["--stdin-filepath", "{buffer_path}"],
+        },
+    },
+
+    "languages": {
+        // Disable Zed's internal prettier formatter, so project specific settings actually get used
+        "HTML": { "prettier": { "allowed": false } },
+        "CSS": { "prettier": { "allowed": false } },
+        "JSON": { "prettier": { "allowed": false } },
+        "JSONC": { "prettier": { "allowed": false } },
+        "JavaScript": { "prettier": { "allowed": false } },
+        "Astro": { "prettier": { "allowed": false } },
+        "TypeScript": { "prettier": { "allowed": false } },
+    },
+}
