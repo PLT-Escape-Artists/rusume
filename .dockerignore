@@ -1,0 +1,29 @@
+# git files
+.git/
+.gitignore
+
+# editor files
+.zed/
+.vscode/
+.idea/
+.cursor/
+.helix/
+
+# astro outputs
+.astro/
+dist/
+
+# package manager files
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# environment variables
+.env
+.env.production
+
+# other stuff we dont want
+prettier.config.ts
+README.md
