@@ -1,43 +1,21 @@
-# Astro Starter Kit: Minimal
+# rusume
 
-```sh
-bun create astro@latest -- --template minimal
-```
+The creator got coerced by [me](https://github.com/spitefully-positive) to create this resume!  
+May it be of great service!
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+# Notes by [spite](https://github.com/spitefully-positive)
 
-## 🚀 Project Structure
+This is all I did in the background for you, ordered from most interesting to least interesting:
 
-Inside of your Astro project, you'll see the following folders and files:
+- Added [Dockerfile](./Dockerfile) and [.dockerignore](./.dockerignore) for deploying the resume
+- Added prettier as a formatter and configured it in [prettier.config.ts](./prettier.config.ts)
+- Added some scripts and packages to handle linting and formatting of your code in [package.json](./package.json)
+- Configured astro in [astro.config.ts](./astro.config.ts)
+- Configured the typescript compiler in [tsconfig.json](./tsconfig.json)
+- Added a useless boilerplate file [src/content.config.ts](./src/content.config.ts) which you can ignore
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+**So what's new?**
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `bun install`             | Installs dependencies                            |
-| `bun dev`             | Starts local dev server at `localhost:4321`      |
-| `bun build`           | Build your production site to `./dist/`          |
-| `bun preview`         | Preview your build locally, before deploying     |
-| `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `bun astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- You can now format your code with `bun run format` or maybe even just by saving if you [configure vscode correctly](https://prettier.io/docs/editors#visual-studio-code)
+- You could build a docker image by running `docker build .` in the repository root (This will be important later)
+- You can now use aliasses for certain folders configured in [tsconfig.json](./tsconfig.json) (This will be more important the more nesting happens in this project)
