@@ -1,0 +1,47 @@
+h1 {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: bold;
+    font-family: var(--font-google-sans-code);
+}
+h2 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #0e6ccf;
+}
+h3 {
+    margin: 0;
+    font-size: 1.17em;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    margin-bottom: 0.5rem;
+}
+h4 {
+    margin: 0;
+    font-weight: bold;
+}
+h5 {
+    margin: 0;
+    font-size: 0.83em;
+    font-weight: bold;
+}
+h6 {
+    margin: 0;
+    font-size: 0.67em;
+    font-weight: bold;
+}
+
+li {
+    font-size: 0.9rem;
+}
+
+address {
+    font-style: inherit;
+}
+
+a {
+    font-style: inherit;
+    color: inherit;
+    text-decoration: inherit;
+}

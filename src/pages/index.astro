@@ -1,5 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+import MailIcon from "@assets/icons/mail.svg";
+import PhoneIcon from "@assets/icons/phone.svg";
+import MapPinIcon from "@assets/icons/map-pin.svg";
+import CalendarIcon from "@assets/icons/calendar.svg";
 ---
 
 <Layout>
@@ -8,17 +13,22 @@ import Layout from "../layouts/Layout.astro";
 			<img src="/testfoto.jpg" alt="Bewerber Foto">
 			<section id="Contact">
 				<h3>KONTAKT</h3>
+
+				<MailIcon/>
 				<b>E-Mail</b>
 				<a href="mailto:ruben.wenzel@freenet.de" target="_blank">ruben.wenzel@freenet.de</a>
 
+				<PhoneIcon/>
 				<b>Telefon</b>
 				<a href="tel:+49163832957" target="_blank">+49 163 3832957</a>
 
+				<MapPinIcon/>
 				<b>Adresse</b>
 				<a href="https://maps.app.goo.gl/ZiaQXwVpqXqSeRqz8" target="_blank">
 					<address>Am Europakanal 38, <br> 91056 Erlangen</address>
 				</a>
 
+				<CalendarIcon/>
 				<b>Geburtsdatum</b>
 				<b>19.11.2000</b>
 			</section>
